@@ -27,11 +27,13 @@
     min-height: 100vh;
     min-width: 300px;
     flex: 1 1 40%;
-    background-image: url(./images/DSC01624.jpg);
+    background: url(./images/DSC01624.jpg) no-repeat border-box;
+    background-position: right 60% top 60%;
 }
 .right-panel {
     flex: 1 1 60%;
     min-height: 100vh;
     min-width: 300px;
     box-shadow: 0 0 15px 0px var(--dark-color, black);
+    background-color: var(--dark-color, black);
 }

@@ -15,6 +15,7 @@
     --middle-color: hsl(0, 0%, 35%);
     --light-color: hsl(0, 0%, 86%);
     --accent-color: hsl(142, 37%, 44%);
+    --red-color: hsl(355, 92%, 60%);
 }
 * {
     box-sizing: border-box;
@@ -69,7 +70,7 @@ svg * {
 
 /* RIGHT SIDE */
 
-
+/* TOP */
 .right-panel {
     flex: 1 1 60%;
     min-height: 100vh;
@@ -90,11 +91,62 @@ p {
     max-width: clamp(45ex, 50vw, 60ex);
     color: var(--light-color, lightgrey);
 }
+
+/* FORM */
 .form-panel {
     background-color: var(--middle-color, grey);
     z-index: 0;
     box-shadow: none;
+    color: var(--light-color, lightgrey);
 }
+.form-panel > p {
+    color: var(--accent-color, lightgreen);
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: -15px;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vmax;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 5px;
+}
+input {
+    font-size: 16px;
+    padding: .3rem;
+    border-radius: 5px;
+    border: 2px solid var(--dark-color, black);
+}
+input:focus {
+    outline: none;
+    box-shadow: -1px 2px 5px 0px var(--dark-color, black);
+}
+/* REQUIRED */
+label {
+    position: relative;
+    left: 5px;
+}
+.required::after {
+    content: "*";
+    color: var(--red-color, red);
+    position: absolute;
+    left: -10px;
+    top: -3px;
+    font-size: 1.2em;
+}
+input:required:valid {
+    border: 2px solid var(--accent-color, lightgreen);
+}
+input:not(:placeholder-shown):not(:focus):invalid {
+    border: 2px solid var(--red-color, red);
+}
+
+/* SUBMIT */
 .submit-panel > div {
     font-size: 14px;
     color: var(--light-color, lightgrey);
@@ -113,6 +165,7 @@ a {
     border-radius: 8px;
     border: none;
 }
+
 /* MOVEMENT */
 button:hover {
     filter: brightness(115%);

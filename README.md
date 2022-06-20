@@ -1,5 +1,7 @@
 # sign-up-form
 
-to-do:
+# Sign up form project from The Odin Project 
 
-create 3 panels on the right
+https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form
+
+## [Live Demo](https://tomcoso.github.io/sign-up-form/)

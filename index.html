@@ -45,6 +45,7 @@
                 </div>
                 <div class="text-logo">Derelict</div>
             </div>
+            <div class="credits">Icon by Vectors Market</div>
         </div>
         
         <div class="right-panel">
@@ -65,43 +66,45 @@
 
                     <div class="input">
                         <label class="required" for="first-name">First name</label>
-                        <input required type="text" id="first-name" name="first-name" placeholder="John">
+                        <input required type="text" id="first-name" name="first-name" placeholder="John" aria-label="first name">
                     </div>
 
                     <div class="input">
                         <label class="required" for="last-name">Last name</label>
-                        <input required type="text" id="last-name" name="last-name" placeholder="Doe">
+                        <input required type="text" id="last-name" name="last-name" placeholder="Doe" aria-label="last name">
                     </div>
 
                     <div class="input">
                         <label class="required" for="user-email">Email</label>
-                        <input required type="email" id="user-email" name="user-email" placeholder="johndoe@gmail.com">
+                        <input required type="email" id="user-email" name="user-email" placeholder="johndoe@gmail.com" aria-label="email">
                     </div>
 
                     <div class="input">
                         <label for="user-number">Phone number</label>
-                        <input type="tel" id="user-numer" name="user-numer" placeholder="XXX-XXXX">
+                        <input type="tel" id="user-numer" name="user-numer" placeholder="XXX-XXXX" aria-label="phone number">
                     </div>
 
                     <div class="input">
                         <label class="required" for="user-pass">Password</label>
-                        <input required type="password" id="user-pass" name="user-pass" pattern="^(?=.*?\d)(?=.*?[a-z])(?=.*?[A-Z]).{8,}$" placeholder="********">
+                        <input required type="password" id="user-pass" name="user-pass" pattern="^(?=.*?\d)(?=.*?[a-z])(?=.*?[A-Z]).{8,}$" placeholder="********" aria-label="password">
                     </div>
 
                     <div class="input">
                         <label class="required" for="user-pass-conf">Confirm password</label>
-                        <input required type="password" id="user-pass-conf" name="user-pass-conf" placeholder="********" pattern="">
+                        <input required type="password" id="user-pass-conf" name="user-pass-conf" placeholder="********" pattern="" aria-label="confirm password">
                     </div>
 
                 </form>
             </div>
             <div class="submit-panel">
-                <button type="submit" form="sign-up-form">Create Account</button>
-                <div><span>Already have an account?</span><a target="_blank" href="https://github.com/tomcoso">Log in</a></div>
+                <button type="submit" form="sign-up-form" aria-label="submit">Create Account</button>
+                <div class="log-in"><span>Already have an account?</span><a target="_blank" href="https://github.com/tomcoso" aria-label="log in">Log in</a></div>
+                <div class="footer">Copyright (C) <a href="https://github.com/tomcoso" target="_blank" aria-label="tomas dessy github">Tomas Dessy</a></div>
             </div>
         </div>
 
-        <div class="credits">Icon by Vectors Market</div>
+        
+        
 
     </div>
     

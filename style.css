@@ -32,6 +32,10 @@
     position: relative;
 }
 
+
+
+
+
 /* LEFT SIDE */
 
 .left-image {
@@ -52,21 +56,29 @@
     background-color: var(--dark-color-transparent, black);
     box-shadow: 0 0 15px 25px var(--dark-color-transparent, black);
 }
+
 .icon svg {
     height: 5rem;
     width: fit-content;
     margin-top: 25%;
     padding: 0 1rem;
 }
+
 svg * {
     fill: var(--light-color, lightgrey);
 }
+
 .text-logo {
     padding: 0 1rem .3rem 0;
     font-family: 'Unica One', monospace;
     font-size: 4rem;
     color: var(--light-color, lightgrey);
 }
+
+
+
+
+
 
 /* RIGHT SIDE */
 
@@ -78,6 +90,7 @@ svg * {
     background-color: var(--dark-color, black);
     font-size: clamp(18px, 3vmin, 22px);
 }
+
 .top-panel,
 .form-panel,
 .submit-panel {
@@ -87,10 +100,14 @@ svg * {
     /* border: 1px solid red; */
     box-shadow: 0px 0px 10px 2px var(--dark-color, black);
 }
+
 p {
     max-width: clamp(45ex, 50vw, 60ex);
     color: var(--light-color, lightgrey);
 }
+
+
+
 
 /* FORM */
 .form-panel {
@@ -99,41 +116,58 @@ p {
     box-shadow: none;
     color: var(--light-color, lightgrey);
 }
+
 .form-panel > p {
     color: var(--accent-color, lightgreen);
     font-weight: bold;
     margin-bottom: 15px;
     margin-top: -15px;
 }
+
 form {
     display: flex;
     flex-wrap: wrap;
     gap: 2vmax;
 }
+
 .input {
     display: flex;
     flex-direction: column;
     font-size: 14px;
     gap: 5px;
 }
+
 input {
     color: var(--light-color, lightgrey);
     font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
     padding: .2rem;
     width: max(250px, 20vw );
     border-radius: 5px;
     border: 1px solid var(--dark-color, black);
     background-color: var(--middle-color, darkgrey);
 }
+
 input:focus {
     outline: none;
     box-shadow: -1px 2px 5px 0px var(--dark-color, black);
 }
+
+
+/* To avoid white bg and black font when using the browser's autofill*/
+input:-webkit-autofill {
+    box-shadow: inset 0 0 0 50px var(--middle-color);
+    -webkit-text-fill-color: var(--light-color, lightgrey) !important;
+}
+
+
+
 /* REQUIRED */
 label {
     position: relative;
     left: 5px;
 }
+
 .required::after {
     content: "*";
     color: var(--accent-color, lightgreen);
@@ -142,23 +176,31 @@ label {
     top: -3px;
     font-size: 1.2em;
 }
+
 input:required:valid {
     border: 1px solid var(--accent-color, lightgreen);
 }
+
 input:not(:placeholder-shown):not(:focus):invalid {
     border: 1px solid var(--red-color, red);
 }
+
+
+
+
 
 /* SUBMIT */
 .submit-panel > div {
     font-size: 14px;
     color: var(--light-color, lightgrey);
 }
+
 a {
     text-decoration: none;
     color: var(--accent-color, lightgreen);
     margin: 5px;
 }
+
 .submit-panel > button {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 20px;
@@ -169,18 +211,28 @@ a {
     border: none;
 }
 
+
+
+
+
 /* MOVEMENT */
 button:hover {
     filter: brightness(115%);
 }
+
 button:active {
     box-shadow: inset 0 0px 8px 0px var(--dark-color, black);
     /* transform: translate(0px, 5px); */
 }
+
 a:hover {
     font-weight: bold;
     filter: brightness(115%);
 }
+
+
+
+
 
 /* FOOTER */
 

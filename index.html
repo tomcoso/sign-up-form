@@ -61,7 +61,7 @@
 
                 <p>Let's do this!</p>
 
-                <form action="">
+                <form id="sign-up-form" action="">
 
                     <div class="input">
                         <label class="required" for="first-name">First name</label>
@@ -85,18 +85,18 @@
 
                     <div class="input">
                         <label class="required" for="user-pass">Password</label>
-                        <input required type="password" id="user-pass" name="user-pass" placeholder="********">
+                        <input required type="password" id="user-pass" name="user-pass" pattern="^(?=.*?\d)(?=.*?[a-z])(?=.*?[A-Z]).{8,}$" placeholder="********">
                     </div>
 
                     <div class="input">
                         <label class="required" for="user-pass-conf">Confirm password</label>
-                        <input required type="text" id="user-pass-conf" name="user-pass-conf" placeholder="********">
+                        <input required type="password" id="user-pass-conf" name="user-pass-conf" placeholder="********" pattern="">
                     </div>
 
                 </form>
             </div>
             <div class="submit-panel">
-                <button type="submit">Create Account</button>
+                <button type="submit" form="sign-up-form">Create Account</button>
                 <div><span>Already have an account?</span><a target="_blank" href="https://github.com/tomcoso">Log in</a></div>
             </div>
         </div>
